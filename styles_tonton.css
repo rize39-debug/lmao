@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffe4e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff1493;
+}
+
+.heart {
+    font-size: 5rem;
+    margin: 20px 0;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #ff69b4;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff1493;
+}
+
+#response {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ff69b4;
+}
+
+/* Tonton Bear Sticker */
+.tonton-bear {
+    width: 100px;
+    height: 100px;
+    background-image: url('tonton-bear.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+
+/* No button escape */
+#noButton {
+    position: absolute;
+}
+
+@keyframes moveNoButton {
+    0% { left: 0; top: 0; }
+    100% { left: calc(100% - 100px); top: calc(100% - 50px); }
+}
